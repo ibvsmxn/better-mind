@@ -1,0 +1,393 @@
+body {
+  font-family: "Jost", sans-serif;
+  font-size: 0.875rem;
+  color: white;
+  letter-spacing: 2px;
+}
+body.user {
+  background-color: #241D6F;
+}
+body.user nav {
+  background: #241D6F;
+}
+body.team {
+  background-color: #008878;
+}
+body.team nav {
+  background: #008878;
+}
+body.messages {
+  background-color: #003F88;
+}
+body.messages nav {
+  background: #003F88;
+}
+body.table-page {
+  background-color: #084039;
+}
+body.table-page nav {
+  background: #084039;
+}
+
+.feather {
+  width: 16px;
+  height: 16px;
+  vertical-align: text-bottom;
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 100;
+  padding: 150px 0 0;
+}
+.sidebar .nav-link {
+  font-size: 1.5em;
+  font-weight: 500;
+  letter-spacing: 1px;
+  color: #fff;
+}
+.sidebar .nav-link .feather {
+  width: 25px;
+  height: 25px;
+  margin-right: 10px;
+  margin-bottom: 3px;
+  margin-left: 10px;
+  color: #fff;
+}
+.sidebar .nav-link:hover .feather {
+  color: inherit;
+}
+.sidebar .nav-item {
+  margin-bottom: 15px;
+}
+.sidebar .nav-item .nav-link {
+  padding: 10px;
+  border-radius: 10px;
+}
+.sidebar .nav-item .nav-link:hover {
+  background: rgba(255, 255, 255, 0.33);
+}
+.sidebar .nav-item .nav-link:active {
+  background: rgba(255, 255, 255, 0.9);
+  color: black;
+}
+.sidebar .nav-item .nav-link.active {
+  background: rgba(255, 255, 255, 0.33);
+  color: white;
+}
+.sidebar .nav-item .nav-link.active .feather {
+  color: inherit;
+}
+.sidebar .nav-item .nav-link.active:hover {
+  background: rgba(255, 255, 255, 0.33);
+}
+.sidebar .nav-item .nav-link.active:active {
+  background: rgba(255, 255, 255, 0.9);
+  color: black;
+}
+.sidebar nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.sidebar .menu-position {
+  height: 66vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 300px;
+}
+
+.sidebar-sticky {
+  position: relative;
+  top: 0;
+  height: calc(100vh - 48px);
+  padding-top: 0.5rem;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.sidebar-heading {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+}
+
+.navbar-brand {
+  font-weight: 400;
+  font-size: 2em;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+}
+.navbar-brand .logo-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.navbar-brand .logo-section svg {
+  margin-bottom: -10px;
+  margin-right: -20px;
+}
+.navbar-brand span {
+  display: block;
+  font-size: 0.5em;
+  font-weight: lighter;
+  line-height: 0.5;
+}
+
+.navbar .navbar-toggler {
+  top: 0.25rem;
+  right: 1rem;
+}
+.navbar .form-control {
+  padding: 0.75rem 1rem;
+  border-width: 0;
+  border-radius: 50px;
+}
+
+@media (max-width: 767.98px) {
+  .sidebar {
+    top: 5rem;
+  }
+}
+main h2 {
+  font-size: 4em;
+  margin-bottom: 0.75em;
+}
+main h3 {
+  font-size: 1.75em;
+}
+main h3 svg.feather {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+  margin-top: -10px;
+}
+main .card {
+  background-color: #adadad33;
+  border-radius: 10px;
+  text-align: center;
+  padding: 30px 10px;
+  max-width: 250px;
+}
+main .card .card-body {
+  padding: 0;
+}
+main .card .card-body h5 {
+  font-weight: 500;
+  font-size: 4em;
+  margin-bottom: 15px;
+}
+main .card .card-body p {
+  font-size: 1.5em;
+  letter-spacing: 1px;
+  font-weight: 300;
+}
+main section {
+  margin: 4em 0;
+}
+main section h3 {
+  font-weight: 400;
+  letter-spacing: 1px;
+  margin-bottom: 1em;
+}
+main section textarea.comment {
+  color: white;
+  width: 100%;
+  min-height: 300px;
+  max-height: 30vh;
+  max-width: 700px;
+  background: rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  border: 2px solid transparent;
+  padding: 20px;
+  line-height: 2em;
+}
+main section textarea.comment:focus, main section textarea.comment:focus-within {
+  background: transparent;
+  border-color: white;
+  box-shadow: none;
+  color: white;
+}
+main section textarea.comment::placeholder {
+  color: rgba(255, 255, 255, 0.25);
+}
+main section form.user-comment {
+  width: 100%;
+  max-width: 700px;
+}
+main section form.user-comment .button-holder {
+  display: flex;
+  margin: 20px 0;
+  float: right;
+  width: 100%;
+  max-width: 700px;
+}
+main section form.user-comment .button-holder a.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 175px;
+  border-radius: 10px;
+  margin-right: 1em;
+  font-size: 1.5em;
+  letter-spacing: 1px;
+  border: 2px solid transparent;
+}
+main section form.user-comment .button-holder a.btn svg {
+  margin-right: 10px;
+  width: 40px;
+  height: 40px;
+}
+main section form.user-comment .button-holder a.btn.btn-secondary {
+  background-color: transparent;
+}
+main section form.user-comment .button-holder a.btn.btn-primary {
+  background-color: #adadad33;
+}
+main section form.user-comment .button-holder a.btn:hover, main section form.user-comment .button-holder a.btn:active, main section form.user-comment .button-holder a.btn:focus, main section form.user-comment .button-holder a.btn:focus-within {
+  box-shadow: none;
+}
+main section form.user-comment .button-holder a.btn:hover {
+  background-color: rgba(255, 255, 255, 0.33);
+}
+main section form.user-comment .button-holder a.btn:active {
+  background-color: rgba(255, 255, 255, 0.9);
+  color: black;
+}
+main section table.table {
+  font-size: 1.25em;
+  color: white;
+}
+main section table.table tr {
+  padding: 15px;
+  border-radius: 10px;
+}
+main section table.table tr:nth-of-type(2n) {
+  background: rgba(0, 0, 0, 0.125);
+}
+main section table.table tr.unread {
+  font-weight: bold;
+}
+main section table.table tr.read svg {
+  color: rgba(255, 255, 255, 0.3);
+}
+main section table.table tbody {
+  border: none !important;
+}
+main section table.table thead, main section table.table th, main section table.table td {
+  border: none !important;
+  padding: 20px;
+}
+main section table.table.messages svg {
+  width: 30px;
+  height: 30px;
+}
+main section table.table.messages thead tr {
+  background: transparent !important;
+}
+main section table.table.messages tr:nth-of-type(odd) {
+  background: rgba(0, 0, 0, 0.125);
+}
+main section table.table.messages tr:nth-of-type(even) {
+  background: rgba(0, 0, 0, 0);
+}
+main section.useful-links .card {
+  background: rgba(0, 0, 0, 0.25);
+  max-width: none;
+  text-align: left;
+  padding: 30px 40px;
+  color: white;
+  text-decoration: none;
+  margin-bottom: 2em;
+  transition: 0.2s all ease;
+}
+main section.useful-links .card:hover {
+  background: rgba(0, 0, 0, 0.375);
+}
+main section.useful-links .card:active {
+  background: black;
+}
+main section.useful-links .card .card-body h5 {
+  font-weight: bold;
+  letter-spacing: 1px;
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+main section.useful-links .card .card-body p {
+  font-size: 1em;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+  padding: 3em 6em;
+}
+footer .form-control-dark {
+  color: #fff;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50px;
+}
+footer .form-control-dark:focus {
+  border-color: transparent;
+  box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.25);
+}
+footer .form-control-dark::placeholder {
+  color: rgba(255, 255, 255, 0.75);
+  letter-spacing: 1px;
+}
+footer .search-section {
+  display: flex;
+}
+footer .search-section svg {
+  position: relative;
+  right: 4em;
+  top: 25px;
+  width: 30px;
+  height: 30px;
+}
+footer input.form-control {
+  width: 100%;
+  max-width: 700px;
+  border-radius: 50px;
+  padding: 15px 30px;
+  font-size: 1.5em;
+  border: 2px solid transparent;
+}
+footer input.form-control:focus, footer input.form-control:focus-within {
+  background: transparent;
+  border-color: white;
+  box-shadow: none;
+  color: white;
+}
+footer input.form-control::placeholder {
+  color: rgba(255, 255, 255, 0.75);
+  letter-spacing: 1px;
+}
+footer .user-credentials {
+  font-size: 1.5em;
+  font-weight: 500;
+  padding: 10px 20px;
+  border-radius: 10px;
+  transition: 0.2s all ease;
+}
+footer .user-credentials span {
+  display: block;
+  font-size: 0.75em;
+  font-weight: lighter;
+}
+footer .user-credentials .logo-section {
+  text-align: right;
+}
+footer .user-credentials .logo-section svg {
+  margin-right: -10px;
+}
+
+/*# sourceMappingURL=dashboard.css.map */
