@@ -2,6 +2,7 @@ $purple: #241D6F;
 $turquoise: #008878;
 $blue: #003F88;
 $darkgreen: #084039;
+$green: #2E6400;
 
 body {    
     font-family: 'Jost', sans-serif;
@@ -11,6 +12,10 @@ body {
 
     &.user {
         background-color: $purple;
+    }
+
+    &.admin {
+        background-color: $green;
     }
 
     &.team {

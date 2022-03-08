@@ -7,6 +7,9 @@ body {
 body.user {
   background-color: #241D6F;
 }
+body.admin {
+  background-color: #2E6400;
+}
 body.team {
   background-color: #008878;
 }
