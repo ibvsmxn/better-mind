@@ -7,26 +7,14 @@ body {
 body.user {
   background-color: #241D6F;
 }
-body.user nav {
-  background: #241D6F;
-}
 body.team {
   background-color: #008878;
-}
-body.team nav {
-  background: #008878;
 }
 body.messages {
   background-color: #003F88;
 }
-body.messages nav {
-  background: #003F88;
-}
 body.table-page {
   background-color: #084039;
-}
-body.table-page nav {
-  background: #084039;
 }
 
 .feather {
@@ -42,6 +30,7 @@ body.table-page nav {
   left: 0;
   z-index: 100;
   padding: 150px 0 0;
+  background-color: transparent;
 }
 .sidebar .nav-link {
   font-size: 1.5em;
@@ -259,10 +248,21 @@ main section form.user-comment .button-holder a.btn:active {
   color: black;
 }
 main section table.table {
-  font-size: 1.25em;
+  font-size: 1em;
   color: white;
 }
+@media screen and (min-width: 768px) {
+  main section table.table {
+    max-width: 90%;
+  }
+}
+@media screen and (min-width: 1023px) {
+  main section table.table {
+    font-size: 1.25em;
+  }
+}
 main section table.table tr {
+  letter-spacing: 1px;
   padding: 15px;
   border-radius: 10px;
 }
@@ -319,6 +319,33 @@ main section.useful-links .card .card-body h5 {
 }
 main section.useful-links .card .card-body p {
   font-size: 1em;
+}
+main section .scroll-buttons {
+  display: grid;
+  width: fit-content;
+  position: absolute;
+  right: 2em;
+  margin-top: -10em;
+}
+main section .scroll-buttons * {
+  transition: 0.2s all ease;
+}
+main section .scroll-buttons svg {
+  color: rgba(255, 255, 255, 0.5);
+  width: 50px;
+  height: 50px;
+}
+main section .scroll-buttons button {
+  background-color: transparent;
+  border-radius: 100px;
+  border: none;
+}
+main section .scroll-buttons button:hover, main section .scroll-buttons button:active, main section .scroll-buttons button:focus, main section .scroll-buttons button:focus-within {
+  background-color: transparent;
+  box-shadow: none;
+}
+main section .scroll-buttons button:hover svg, main section .scroll-buttons button:active svg, main section .scroll-buttons button:focus svg, main section .scroll-buttons button:focus-within svg {
+  color: white;
 }
 
 footer {
