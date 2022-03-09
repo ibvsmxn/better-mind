@@ -16,6 +16,25 @@ body {
 
     &.admin {
         background-color: $green;
+
+        .table {
+            max-width: 95%;
+        }
+
+        .scroll-buttons {
+            position: relative;
+        }
+
+        .mhp {
+            .card {
+                h5 {
+                    font-size: 1.25em;
+                    color: white;
+                    text-decoration: none;
+                    margin-bottom: 0;
+                }
+            }
+        }
     }
 
     &.team {
@@ -339,6 +358,7 @@ main {
             thead, th, td {
                 border: none !important;
                 padding: 20px;
+                vertical-align: middle;
             }
 
             &.messages {

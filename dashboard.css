@@ -10,6 +10,18 @@ body.user {
 body.admin {
   background-color: #2E6400;
 }
+body.admin .table {
+  max-width: 95%;
+}
+body.admin .scroll-buttons {
+  position: relative;
+}
+body.admin .mhp .card h5 {
+  font-size: 1.25em;
+  color: white;
+  text-decoration: none;
+  margin-bottom: 0;
+}
 body.team {
   background-color: #008878;
 }
@@ -284,6 +296,7 @@ main section table.table tbody {
 main section table.table thead, main section table.table th, main section table.table td {
   border: none !important;
   padding: 20px;
+  vertical-align: middle;
 }
 main section table.table.messages svg {
   width: 30px;
