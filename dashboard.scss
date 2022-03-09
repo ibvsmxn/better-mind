@@ -395,7 +395,8 @@ main {
             }
         }
 
-        .scroll-buttons {
+        .scroll-buttons,
+        .action-buttons {
             display: grid;
             width: fit-content;
             position: absolute;
@@ -430,6 +431,35 @@ main {
                     
                 }
             }
+        }
+
+        .action-buttons {
+            display: block;
+            position: static;
+            margin: 0;
+
+            button {
+                background: white;
+                height: 40px;
+                width: auto;
+                border: 2px solid transparent;
+
+                svg {
+                    color: black;
+                    width: 20px;
+                    height: 20px;
+                }
+
+                &:hover,
+                &:active,
+                &:focus,
+                &:focus-within {
+                    border: 2px solid white;
+                    
+                }
+            }
+
+            
         }
     }
 }
