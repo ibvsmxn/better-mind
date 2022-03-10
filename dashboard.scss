@@ -10,6 +10,13 @@ body {
     color: white;
     letter-spacing: 2px;
 
+    &.user,
+    &.admin {
+        section {
+            padding-bottom: 20vh;
+        }
+    }
+
     &.user {
         background-color: $purple;
     }
@@ -23,18 +30,62 @@ body {
 
         .scroll-buttons {
             position: relative;
+            bottom: -20em;
+            margin-top: 0;
         }
 
-        .mhp {
-            .card {
-                h5 {
-                    font-size: 1.25em;
-                    color: white;
-                    text-decoration: none;
-                    margin-bottom: 0;
+        main {
+            .mhp-side {
+                @media screen and (min-width: 1200px) {
+                    margin-top: -4em;
                 }
             }
+            .mhp {
+                .card {
+                    padding: 12px;
+                    padding-right: 0;
+                    margin-bottom: 10px;
+                    text-decoration: none;
+                    transition: 0.2s all ease;
+
+                    .card-body {
+                        display: inline-block;
+                        align-items: center;
+
+                        h5 {
+                            font-size: 1.5em;
+                            color: white;
+                            margin-bottom: 0;
+                            letter-spacing: 1px;
+                            text-align: center;
+                        }
+
+                        span {
+                            color: white;
+                            font-size: 0.75em;
+                            width: 20%;
+                            margin-right: -10px;
+                        }
+                    }
+
+                    &:hover {
+                        background-color: white;
+                        
+                        h5, span {
+                            color: black;
+                        }
+                    }
+                }
+
+                .list-holder {
+                    max-height: 350px;
+                    overflow-y: scroll;
+                }
+            }
+
+            
         }
+        
     }
 
     &.team {
@@ -211,20 +262,30 @@ main {
         text-align: center;
         padding: 30px 10px;
         max-width: 250px;
+        margin: 15px auto;
+        margin-left: 0;
 
         .card-body {
             padding: 0;
 
             h5 {
                 font-weight: 500;
-                font-size: 4em;
+                font-size: 3em;
                 margin-bottom: 15px;
+
+                @media screen and (min-width: 768px) {
+                    font-size: 4em;
+                }
             }
 
             p {
-                font-size: 1.5em;
+                font-size: 1em;
                 letter-spacing: 1px;
                 font-weight: 300;
+
+                @media screen and (min-width: 768px) {
+                    font-size: 1.25em;
+                }
             }
         }
     }
@@ -461,7 +522,8 @@ main {
             button {
                 background: white;
                 height: 40px;
-                width: auto;
+                width: 40px;
+                padding: 0;
                 border: 2px solid transparent;
 
                 svg {
@@ -491,6 +553,7 @@ footer {
     width: 100%;
     z-index: 100;
     padding: 3em 6em;
+    backdrop-filter: blur(15px);
 
     .form-control-dark {
         color: #fff;
