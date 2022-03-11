@@ -1,4 +1,5 @@
 $purple: #241D6F;
+$lightpurple: #1d14b1;
 $turquoise: #008878;
 $blue: #003F88;
 $darkgreen: #084039;
@@ -103,6 +104,17 @@ body {
 
     &.login {
         background-color: $red;
+
+        .login-positioning {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: calc(75vh);
+        }
+    }
+
+    &.register {
+        background-color: $lightpurple;
 
         .login-positioning {
             display: flex;
