@@ -1,42 +1,54 @@
 body {
-  font-family: "Jost", sans-serif;
-  font-size: 0.875rem;
+  font-family: 'Jost', sans-serif;
+  font-size: .875rem;
   color: white;
   letter-spacing: 2px;
 }
+
 body.user section, body.admin section {
   padding-bottom: 20vh;
 }
+
 body.user {
   background-color: #241D6F;
 }
+
 body.admin {
   background-color: #2E6400;
 }
+
 body.admin .table {
   max-width: 95%;
 }
+
 body.admin .scroll-buttons {
   position: relative;
   bottom: -20em;
   margin-top: 0;
 }
+
 @media screen and (min-width: 1200px) {
   body.admin main .mhp-side {
     margin-top: -4em;
   }
 }
+
 body.admin main .mhp .card {
   padding: 12px;
   padding-right: 0;
   margin-bottom: 10px;
   text-decoration: none;
+  -webkit-transition: 0.2s all ease;
   transition: 0.2s all ease;
 }
+
 body.admin main .mhp .card .card-body {
   display: inline-block;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
+
 body.admin main .mhp .card .card-body h5 {
   font-size: 1.5em;
   color: white;
@@ -44,30 +56,54 @@ body.admin main .mhp .card .card-body h5 {
   letter-spacing: 1px;
   text-align: center;
 }
+
 body.admin main .mhp .card .card-body span {
   color: white;
   font-size: 0.75em;
   width: 20%;
   margin-right: -10px;
 }
+
 body.admin main .mhp .card:hover {
   background-color: white;
 }
+
 body.admin main .mhp .card:hover h5, body.admin main .mhp .card:hover span {
   color: black;
 }
+
 body.admin main .mhp .list-holder {
   max-height: 350px;
   overflow-y: scroll;
 }
+
 body.team {
   background-color: #008878;
 }
+
 body.messages {
   background-color: #003F88;
 }
+
 body.table-page {
   background-color: #084039;
+}
+
+body.login {
+  background-color: #9b2b31;
+}
+
+body.login .login-positioning {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: calc(75vh);
 }
 
 .feather {
@@ -85,12 +121,14 @@ body.table-page {
   padding: 150px 0 0;
   background-color: transparent;
 }
+
 .sidebar .nav-link {
   font-size: 1.5em;
   font-weight: 500;
   letter-spacing: 1px;
   color: #fff;
 }
+
 .sidebar .nav-link .feather {
   width: 25px;
   height: 25px;
@@ -99,47 +137,70 @@ body.table-page {
   margin-left: 10px;
   color: #fff;
 }
+
 .sidebar .nav-link:hover .feather {
   color: inherit;
 }
+
 .sidebar .nav-item {
   margin-bottom: 15px;
 }
+
 .sidebar .nav-item .nav-link {
   padding: 10px;
   border-radius: 10px;
 }
+
 .sidebar .nav-item .nav-link:hover {
   background: rgba(255, 255, 255, 0.33);
 }
+
 .sidebar .nav-item .nav-link:active {
   background: rgba(255, 255, 255, 0.9);
   color: black;
 }
+
 .sidebar .nav-item .nav-link.active {
   background: rgba(255, 255, 255, 0.33);
   color: white;
 }
+
 .sidebar .nav-item .nav-link.active .feather {
   color: inherit;
 }
+
 .sidebar .nav-item .nav-link.active:hover {
   background: rgba(255, 255, 255, 0.33);
 }
+
 .sidebar .nav-item .nav-link.active:active {
   background: rgba(255, 255, 255, 0.9);
   color: black;
 }
+
 .sidebar nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
+
 .sidebar .menu-position {
   height: 66vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   width: 100%;
   max-width: 300px;
 }
@@ -148,31 +209,40 @@ body.table-page {
   position: relative;
   top: 0;
   height: calc(100vh - 48px);
-  padding-top: 0.5rem;
+  padding-top: .5rem;
   overflow-x: hidden;
   overflow-y: auto;
 }
 
 .sidebar-heading {
-  font-size: 0.75rem;
+  font-size: .75rem;
   text-transform: uppercase;
 }
 
 .navbar-brand {
   font-weight: 400;
   font-size: 2em;
-  padding-top: 0.75rem;
-  padding-bottom: 0.75rem;
+  padding-top: .75rem;
+  padding-bottom: .75rem;
 }
+
 .navbar-brand .logo-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
+
 .navbar-brand .logo-section svg {
   margin-bottom: -10px;
   margin-right: -20px;
 }
+
 .navbar-brand span {
   display: block;
   font-size: 0.5em;
@@ -181,11 +251,12 @@ body.table-page {
 }
 
 .navbar .navbar-toggler {
-  top: 0.25rem;
+  top: .25rem;
   right: 1rem;
 }
+
 .navbar .form-control {
-  padding: 0.75rem 1rem;
+  padding: .75rem 1rem;
   border-width: 0;
   border-radius: 50px;
 }
@@ -195,19 +266,23 @@ body.table-page {
     top: 5rem;
   }
 }
+
 main h2 {
   font-size: 4em;
   margin-bottom: 0.75em;
 }
+
 main h3 {
   font-size: 1.75em;
 }
+
 main h3 svg.feather {
   width: 30px;
   height: 30px;
   margin-right: 10px;
   margin-top: -10px;
 }
+
 main .card {
   background-color: #adadad33;
   border-radius: 10px;
@@ -217,37 +292,45 @@ main .card {
   margin: 15px auto;
   margin-left: 0;
 }
+
 main .card .card-body {
   padding: 0;
 }
+
 main .card .card-body h5 {
   font-weight: 500;
   font-size: 3em;
   margin-bottom: 15px;
 }
+
 @media screen and (min-width: 768px) {
   main .card .card-body h5 {
     font-size: 4em;
   }
 }
+
 main .card .card-body p {
   font-size: 1em;
   letter-spacing: 1px;
   font-weight: 300;
 }
+
 @media screen and (min-width: 768px) {
   main .card .card-body p {
     font-size: 1.25em;
   }
 }
+
 main section {
   margin: 4em 0;
 }
+
 main section h3 {
   font-weight: 400;
   letter-spacing: 1px;
   margin-bottom: 1em;
 }
+
 main section textarea.comment {
   color: white;
   width: 100%;
@@ -260,30 +343,56 @@ main section textarea.comment {
   padding: 20px;
   line-height: 2em;
 }
+
 main section textarea.comment:focus, main section textarea.comment:focus-within {
   background: transparent;
   border-color: white;
-  box-shadow: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
   color: white;
 }
+
+main section textarea.comment::-webkit-input-placeholder {
+  color: rgba(255, 255, 255, 0.25);
+}
+
+main section textarea.comment:-ms-input-placeholder {
+  color: rgba(255, 255, 255, 0.25);
+}
+
+main section textarea.comment::-ms-input-placeholder {
+  color: rgba(255, 255, 255, 0.25);
+}
+
 main section textarea.comment::placeholder {
   color: rgba(255, 255, 255, 0.25);
 }
+
 main section form.user-comment {
   width: 100%;
   max-width: 700px;
 }
+
 main section form.user-comment .button-holder {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   margin: 20px 0;
   float: right;
   width: 100%;
   max-width: 700px;
 }
+
 main section form.user-comment .button-holder a.btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   max-width: 175px;
   border-radius: 10px;
   margin-right: 1em;
@@ -291,76 +400,193 @@ main section form.user-comment .button-holder a.btn {
   letter-spacing: 1px;
   border: 2px solid transparent;
 }
+
 main section form.user-comment .button-holder a.btn svg {
   margin-right: 10px;
   width: 40px;
   height: 40px;
 }
+
 main section form.user-comment .button-holder a.btn.btn-secondary {
   background-color: transparent;
 }
+
 main section form.user-comment .button-holder a.btn.btn-primary {
   background-color: #adadad33;
 }
+
 main section form.user-comment .button-holder a.btn:hover, main section form.user-comment .button-holder a.btn:active, main section form.user-comment .button-holder a.btn:focus, main section form.user-comment .button-holder a.btn:focus-within {
-  box-shadow: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
+
 main section form.user-comment .button-holder a.btn:hover {
   background-color: rgba(255, 255, 255, 0.33);
 }
+
 main section form.user-comment .button-holder a.btn:active {
   background-color: rgba(255, 255, 255, 0.9);
   color: black;
 }
+
+main section.login-section .btn {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  max-width: 300px;
+  width: 200px;
+  border-radius: 10px;
+  margin-right: 1em;
+  font-size: 1.5em;
+  letter-spacing: 1px;
+  border: 2px solid transparent;
+  margin-top: 2em;
+  border-radius: 50px;
+}
+
+main section.login-section .btn svg {
+  margin-right: 10px;
+  width: 40px;
+  height: 40px;
+}
+
+main section.login-section .btn.btn-secondary {
+  background-color: transparent;
+}
+
+main section.login-section .btn.btn-primary {
+  background-color: #adadad33;
+}
+
+main section.login-section .btn:hover, main section.login-section .btn:active, main section.login-section .btn:focus, main section.login-section .btn:focus-within {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+main section.login-section .btn:hover {
+  background-color: rgba(255, 255, 255, 0.33);
+}
+
+main section.login-section .btn:active {
+  background-color: rgba(255, 255, 255, 0.9);
+  color: black;
+}
+
+main section.login-section label,
+main section.login-section .form-text {
+  color: white;
+  letter-spacing: 1px;
+  margin: 15px 0;
+}
+
+main section.login-section input.form-control {
+  color: #fff;
+  background-color: rgba(255, 255, 255, 0.1);
+  width: 100%;
+  max-width: 700px;
+  border-radius: 50px;
+  padding: 15px 30px;
+  font-size: 1.5em;
+  border: 2px solid transparent;
+  margin-bottom: 20px;
+}
+
+main section.login-section input.form-control:focus, main section.login-section input.form-control:focus-within {
+  background: transparent;
+  border-color: white;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  color: white;
+}
+
+main section.login-section input.form-control::-webkit-input-placeholder {
+  color: rgba(255, 255, 255, 0.75);
+  letter-spacing: 1px;
+}
+
+main section.login-section input.form-control:-ms-input-placeholder {
+  color: rgba(255, 255, 255, 0.75);
+  letter-spacing: 1px;
+}
+
+main section.login-section input.form-control::-ms-input-placeholder {
+  color: rgba(255, 255, 255, 0.75);
+  letter-spacing: 1px;
+}
+
+main section.login-section input.form-control::placeholder {
+  color: rgba(255, 255, 255, 0.75);
+  letter-spacing: 1px;
+}
+
 main section table.table {
   font-size: 1em;
   color: white;
 }
+
 @media screen and (min-width: 768px) {
   main section table.table {
     max-width: 90%;
   }
 }
+
 @media screen and (min-width: 1023px) {
   main section table.table {
     font-size: 1.25em;
   }
 }
+
 main section table.table tr {
   letter-spacing: 1px;
   padding: 15px;
   border-radius: 10px;
 }
+
 main section table.table tr:nth-of-type(2n) {
   background: rgba(0, 0, 0, 0.125);
 }
+
 main section table.table tr.unread {
   font-weight: bold;
 }
+
 main section table.table tr.read svg {
   color: rgba(255, 255, 255, 0.3);
 }
+
 main section table.table tbody {
   border: none !important;
 }
+
 main section table.table thead, main section table.table th, main section table.table td {
   border: none !important;
   padding: 20px;
   vertical-align: middle;
 }
+
 main section table.table.messages svg {
   width: 30px;
   height: 30px;
 }
+
 main section table.table.messages thead tr {
   background: transparent !important;
 }
+
 main section table.table.messages tr:nth-of-type(odd) {
   background: rgba(0, 0, 0, 0.125);
 }
+
 main section table.table.messages tr:nth-of-type(even) {
   background: rgba(0, 0, 0, 0);
 }
+
 main section.useful-links .card {
   background: rgba(0, 0, 0, 0.25);
   max-width: none;
@@ -369,55 +595,71 @@ main section.useful-links .card {
   color: white;
   text-decoration: none;
   margin-bottom: 2em;
+  -webkit-transition: 0.2s all ease;
   transition: 0.2s all ease;
 }
+
 main section.useful-links .card:hover {
   background: rgba(0, 0, 0, 0.375);
 }
+
 main section.useful-links .card:active {
   background: black;
 }
+
 main section.useful-links .card .card-body h5 {
   font-weight: bold;
   letter-spacing: 1px;
   font-size: 2em;
   margin-bottom: 10px;
 }
+
 main section.useful-links .card .card-body p {
   font-size: 1em;
 }
+
 main section .scroll-buttons,
 main section .action-buttons {
+  display: -ms-grid;
   display: grid;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
   width: fit-content;
   position: absolute;
   right: 2em;
   margin-top: -10em;
 }
+
 main section .scroll-buttons *,
 main section .action-buttons * {
+  -webkit-transition: 0.2s all ease;
   transition: 0.2s all ease;
 }
+
 main section .scroll-buttons svg,
 main section .action-buttons svg {
   color: rgba(255, 255, 255, 0.5);
   width: 50px;
   height: 50px;
 }
+
 main section .scroll-buttons button,
 main section .action-buttons button {
   background-color: transparent;
   border-radius: 100px;
   border: none;
 }
+
 main section .scroll-buttons button:hover, main section .scroll-buttons button:active, main section .scroll-buttons button:focus, main section .scroll-buttons button:focus-within,
 main section .action-buttons button:hover,
 main section .action-buttons button:active,
 main section .action-buttons button:focus,
 main section .action-buttons button:focus-within {
   background-color: transparent;
-  box-shadow: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
+
 main section .scroll-buttons button:hover svg, main section .scroll-buttons button:active svg, main section .scroll-buttons button:focus svg, main section .scroll-buttons button:focus-within svg,
 main section .action-buttons button:hover svg,
 main section .action-buttons button:active svg,
@@ -425,11 +667,13 @@ main section .action-buttons button:focus svg,
 main section .action-buttons button:focus-within svg {
   color: white;
 }
+
 main section .action-buttons {
   display: block;
   position: static;
   margin: 0;
 }
+
 main section .action-buttons button {
   background: white;
   height: 40px;
@@ -437,11 +681,13 @@ main section .action-buttons button {
   padding: 0;
   border: 2px solid transparent;
 }
+
 main section .action-buttons button svg {
   color: black;
   width: 20px;
   height: 20px;
 }
+
 main section .action-buttons button:hover, main section .action-buttons button:active, main section .action-buttons button:focus, main section .action-buttons button:focus-within {
   border: 2px solid white;
 }
@@ -453,25 +699,49 @@ footer {
   width: 100%;
   z-index: 100;
   padding: 3em 6em;
-  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+          backdrop-filter: blur(15px);
 }
+
 footer .form-control-dark {
   color: #fff;
   background-color: rgba(255, 255, 255, 0.1);
   border-color: rgba(255, 255, 255, 0.1);
   border-radius: 50px;
 }
+
 footer .form-control-dark:focus {
   border-color: transparent;
-  box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.25);
+  -webkit-box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.25);
+          box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.25);
 }
+
+footer .form-control-dark::-webkit-input-placeholder {
+  color: rgba(255, 255, 255, 0.75);
+  letter-spacing: 1px;
+}
+
+footer .form-control-dark:-ms-input-placeholder {
+  color: rgba(255, 255, 255, 0.75);
+  letter-spacing: 1px;
+}
+
+footer .form-control-dark::-ms-input-placeholder {
+  color: rgba(255, 255, 255, 0.75);
+  letter-spacing: 1px;
+}
+
 footer .form-control-dark::placeholder {
   color: rgba(255, 255, 255, 0.75);
   letter-spacing: 1px;
 }
+
 footer .search-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
+
 footer .search-section svg {
   position: relative;
   right: 4em;
@@ -479,6 +749,7 @@ footer .search-section svg {
   width: 30px;
   height: 30px;
 }
+
 footer input.form-control {
   width: 100%;
   max-width: 700px;
@@ -487,33 +758,55 @@ footer input.form-control {
   font-size: 1.5em;
   border: 2px solid transparent;
 }
+
 footer input.form-control:focus, footer input.form-control:focus-within {
   background: transparent;
   border-color: white;
-  box-shadow: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
   color: white;
 }
+
+footer input.form-control::-webkit-input-placeholder {
+  color: rgba(255, 255, 255, 0.75);
+  letter-spacing: 1px;
+}
+
+footer input.form-control:-ms-input-placeholder {
+  color: rgba(255, 255, 255, 0.75);
+  letter-spacing: 1px;
+}
+
+footer input.form-control::-ms-input-placeholder {
+  color: rgba(255, 255, 255, 0.75);
+  letter-spacing: 1px;
+}
+
 footer input.form-control::placeholder {
   color: rgba(255, 255, 255, 0.75);
   letter-spacing: 1px;
 }
+
 footer .user-credentials {
   font-size: 1.5em;
   font-weight: 500;
   padding: 10px 20px;
   border-radius: 10px;
+  -webkit-transition: 0.2s all ease;
   transition: 0.2s all ease;
 }
+
 footer .user-credentials span {
   display: block;
   font-size: 0.75em;
   font-weight: lighter;
 }
+
 footer .user-credentials .logo-section {
   text-align: right;
 }
+
 footer .user-credentials .logo-section svg {
   margin-right: -10px;
 }
-
 /*# sourceMappingURL=dashboard.css.map */
